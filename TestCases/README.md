@@ -1,7 +1,7 @@
 ### Test Cases for Adobe Illustrator
 
 ## Condition coverage: 
-![Repo List](/img/Condition.jpg)
+![Repo List](/TestCases/img/Condition.jpg)
 
 In order for the project to be allocated a space (and be drawn in Adobe Illustrator), it must fulfil 2 conditions as shown above. The test values we are using are as such: 
 
