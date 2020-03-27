@@ -12,18 +12,18 @@ Since the drawn box is of dimension: 411pt (Width) by 328pt (Length), we will co
 
 
 ## Fault-based coverage:
-![Repo List](/img/faultBasedOne.jpg)
+![Repo List](/TestCases/img/faultBasedOne.jpg)
 
 As shown here, even though boundaries 1 and 2 have the same area, the student's project may not necessarily be allocated since it may not fit the required width or length
 
 
 ## Non-numerical values (Invalid input):
-![Repo List](/img/NonNumerical.jpg)
+![Repo List](/TestCases/img/NonNumerical.jpg)
 
 Given a non-numerical input for the project dimensions for the function "checkAndDrawBoxes", a prompt will be shown in Adobe Illustrator informing the user that a non-numerical value has been passed in as an input
 
 
 ## Negative values (Invalid input):
-![Repo List](/img/NegativeValues.jpg)
+![Repo List](/TestCases/img/NegativeValues.jpg)
 
 Given negative values for either project dimensions or boxes drawn by user in Adobe Illustrator, a prompt will be shown to inform the user.
