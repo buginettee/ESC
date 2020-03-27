@@ -248,6 +248,12 @@ function checkAndDrawBoxes(bigArray){
                 break; // after we assign already should break out so we don't repeat assignments
             }
         }
+        if(projectDimensions[i].fixed != true){
+            var alertString = 'Could not find appropriate allocation for project ';
+            var newI = i+1;
+            alertString += newI;
+            alert(alertString, 'Failed to allocate');
+        }
     }
     $.writeln(userDrawnBoxes.length);
     $.writeln(bigArray[0].length);

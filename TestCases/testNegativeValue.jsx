@@ -138,15 +138,16 @@ function checkAndDrawBoxes(bigArray){
     var projectDimensions = bigArray[1];
     var artLayer = myDoc.layers.add();
     
+    var test = typeof(10);
+    
     for(var k = 0; k < userDrawnBoxes.length; k++){
-        if(userDrawnBoxes[k].height <= 0 || userDrawnBoxes[k].width <= 0 || typeof(userDrawnBoxes[k].width) != Number || typeof(userDrawnBoxes[k].height) != Number ){
+        if(userDrawnBoxes[k].height <= 0 || userDrawnBoxes[k].width <= 0){
             $.writeln('Invalid values passed in for project dimensions');
             alert('Invalid values passed in for project dimensions');
             return false;
             }
-        }
+        }    
     
-    var test = typeof(10);
     for(var k = 0; k < projectDimensions.length; k++){
         if(projectDimensions[k].length <= 0 || projectDimensions[k].width <= 0){
             $.writeln('Invalid values passed in for project dimensions');
