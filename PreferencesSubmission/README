@@ -1,1 +1,20 @@
-hi
+Descriptions of files and their usage
+
+capstonepref -csv.ipynb
+-A jupyter notebook to read the excel sheet in a csv form, need to download the csv file from the online excel spreadsheet
+-csv file need to be in the same folder
+-More work and less automation
+
+capstonepref.ipynb
+-A jupyter notebook to read the online excel sheet, no need to download anything
+-Usage of json file to link the code to the online excel sheet directly
+-Same purpose as excel.py but this file has more explaination and guidelines
+
+utils.py
+-main python file containing all the functions 
+
+excel.py
+-python file that act as a black box for capstone team to run
+
+testing.py
+-python file using unittest library to test the functions
