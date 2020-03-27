@@ -4,3 +4,8 @@
 This is the Github Repository for project 2 (Capstone Allocation)
 
 Approach taken towards the project is two-pronged: An online form parser, and a script for Adobe Illustrator
+
+How it works (Online form parser):
+
+
+How it works (script for Illustrator):
