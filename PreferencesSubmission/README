@@ -18,3 +18,8 @@ excel.py
 
 testing.py
 -python file using unittest library to test the functions
+
+
+Libraries needed:
+gspread
+oauth2client.service_account
