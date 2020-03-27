@@ -139,11 +139,6 @@ function checkAndDrawBoxes(bigArray){
     var artLayer = myDoc.layers.add();
     
     for(var k = 0; k < userDrawnBoxes.length; k++){
-        //if(typeof(userDrawnBoxes[k] != Object){
-            //$.writeln('Parameters passed in are not of object type');
-            //alert('Parameters passed in are not of object type');
-            //return false;
-            //}
         if(userDrawnBoxes[k].height <= 0 || userDrawnBoxes[k].width <= 0 || typeof(userDrawnBoxes[k].width) != Number || typeof(userDrawnBoxes[k].height) != Number ){
             $.writeln('Invalid values passed in for project dimensions');
             alert('Invalid values passed in for project dimensions');
@@ -153,11 +148,6 @@ function checkAndDrawBoxes(bigArray){
     
     var test = typeof(10);
     for(var k = 0; k < projectDimensions.length; k++){
-        //if(typeof(projectDimensions[k] != Object){
-            //$.writeln('Parameters passed in are not of object type');
-            //alert('Parameters passed in are not of object type');
-            //return false;
-            //}
         if(projectDimensions[k].length <= 0 || projectDimensions[k].width <= 0){
             $.writeln('Invalid values passed in for project dimensions');
             alert('Invalid values passed in for project dimensions: Negative Values');

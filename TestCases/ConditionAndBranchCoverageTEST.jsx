@@ -151,6 +151,26 @@ function checkAndDrawBoxes(bigArray){
     var userDrawnBoxes = bigArray[0];
     var projectDimensions = bigArray[1];
     var artLayer = myDoc.layers.add();
+
+    for(var k = 0; k < userDrawnBoxes.length; k++){
+        if(userDrawnBoxes[k].height <= 0 || userDrawnBoxes[k].width <= 0){
+            $.writeln('Invalid values passed in for drawn boxes');
+            alert('Invalid values passed in for drawn boxes');
+            return false;
+            }
+        }
+    var test = typeof(10);
+    for(var k = 0; k < projectDimensions.length; k++){
+        if(projectDimensions[k].length <= 0 || projectDimensions[k].width <= 0){
+            $.writeln('Invalid values passed in for project dimensions');
+            alert('Invalid values passed in for project dimensions: Negative Values');
+            return false;
+            }
+        if(typeof(projectDimensions[k].width) != test || typeof(projectDimensions[k].length) != test){
+            $.writeln('Invalid values passed in for project dimensions');
+            alert('Invalid values passed in for project dimensions: Non-numerical values');
+            }
+        }
     
     $.writeln('Size of userDrawBoxes is: ', userDrawnBoxes.length)
     
