@@ -6,9 +6,13 @@ This is the Github Repository for project 2 (Capstone Allocation)
 Approach taken towards the project is two-pronged: An online form parser, and a script for Adobe Illustrator
 
 How it works (Online form parser):
+Usage of google forms to collect preferences submissions from student groups
+Google forms can be configured to check for invalid inputs
+Usage of online excel speadsheet for capstone team to view the submissions realtime and edit where necessary
+Usage of a python file to further check the excel spreadsheet for total submissions count and possible duplicate
+Where necessary, the code will inform the capstone team of any issues.
+Files are all in PreferencesSubmissions
+Google form is www.tinyurl.capstonepref
 
 
-How it works (Script for Illustrator):
-Several scripts in a folder will be provided alongside an instructional README.md. Follow all the instructions in the README and save files into the instructed folders to ensure a smooth running of the script.
-
-These scripts are specifically designed to take in drawn boundaries on Adobe Illustrator and generate an allocation for all the capstone groups. The user will then be able to make amendments directly in Illustrator. Once completed, the allocation can be selectively saved for some groups while rerunning the algorithm on others.
+How it works (script for Illustrator):
