@@ -11,7 +11,7 @@ How it works (Online form parser):
 -Usage of online excel speadsheet for capstone team to view the submissions realtime and edit where necessary  
 -Usage of a python file to further check the excel spreadsheet for total submissions count and possible duplicate  
 -Where necessary, the code will inform the capstone team of any issues.  
--Files are all in PreferencesSubmissions  
+-Files are all in PreferencesSubmission  
 -Google form is www.tinyurl.com/capstonepref  
 
 
