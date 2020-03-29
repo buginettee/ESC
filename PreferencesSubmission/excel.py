@@ -7,7 +7,7 @@ total_groups_number = 4
 #check for correct submissions count
 utils.total_submission_checker(total_groups_number, excel_sheet)
 #check for duplicate in submissions
-utils.duplicate_checker(excel_sheet)
+utils.duplicate_checker(total_groups_number, excel_sheet)
 
 
 

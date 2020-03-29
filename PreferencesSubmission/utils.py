@@ -45,13 +45,13 @@ def total_submission_checker(total_groups_number, sheet):
 
 
 
-def duplicate_checker(sheet):
+def duplicate_checker(total_groups_number, sheet):
 
     number_of_submissions = len(sheet.get_all_values()) - 1
 
     
     groups_checked = ["Not check"]
-    for i in range(4):
+    for i in range(total_groups_number):
         groups_checked.append("Not check")
 
     duplicate = 0
