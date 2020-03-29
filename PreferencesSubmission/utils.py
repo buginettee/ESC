@@ -47,6 +47,11 @@ def total_submission_checker(total_groups_number, sheet):
 
 def duplicate_checker(total_groups_number, sheet):
 
+    if (total_groups_number<=0):
+        return "Invalid total groups, it should be more than zero"
+    elif (total_groups_number>100):
+        return "Invalid total groups, it should be at most 100"
+
     number_of_submissions = len(sheet.get_all_values()) - 1
 
     
