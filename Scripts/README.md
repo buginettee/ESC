@@ -44,3 +44,28 @@ showcase width  - width of project
 assigned        - boolean value, true if project has been assigned an allocation
 confirmed       - boolean value, true if project's allocation is confirmed and project is fixed at the location
 ```
+
+
+Calculations involved:
+```
+For project dimensions:
+
+- Since project dimensions provided in the csv file is in meters, we first have to multiply it (x1000) to convert the value into millimeters
+- To draw the rectangles, we have to input values in units of points (10mm = 3.528 points)
+- To convert project dimensions from millimeters into points, we have to divide the values by 0.3528
+
+E.g. calculating width of project in points
+var widthInMillimeters = originalWidth * 1000
+var widthInPoints = widthInMillimeters / 0.3528
+
+To draw using rectangle function, we have to input values such as widthInPoints
+```
+
+```
+For user drawn boxes:
+- When the script read values from Illustrator, the values are read in units of points
+- Converting these values to millimeters requires us to multiply the value by 0.3528
+
+E.g. calculating value of width in millimeters from points
+var widthInMillimeters = originalWidth * 0.3528
+```
