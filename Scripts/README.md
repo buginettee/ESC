@@ -50,7 +50,8 @@ Calculations involved:
 ```
 For project dimensions:
 
-- Since project dimensions provided in the csv file is in meters, we first have to multiply it (x1000) to convert the value into millimeters
+- Since project dimensions provided in the csv file is in meters, we first have to multiply it (x1000) to convert 
+the value into millimeters
 - To draw the rectangles, we have to input values in units of points (10mm = 3.528 points)
 - To convert project dimensions from millimeters into points, we have to divide the values by 0.3528
 
