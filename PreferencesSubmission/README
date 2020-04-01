@@ -24,3 +24,9 @@ Libraries needed:
 gspread
 oauth2client.service_account
 unittest
+
+Useful links:  
+To link python code to online excel sheet:
+https://towardsdatascience.com/accessing-google-spreadsheet-data-using-python-90a5bc214fd2  
+To create executable file for improved user's experience
+https://dev.to/eshleron/how-to-convert-py-to-exe-step-by-step-guide-3cfi
