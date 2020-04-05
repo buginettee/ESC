@@ -26,7 +26,13 @@ oauth2client.service_account
 unittest
 
 Useful links:  
-To link python code to online excel sheet:
-https://towardsdatascience.com/accessing-google-spreadsheet-data-using-python-90a5bc214fd2  
+-To google forms for students to fill in their preferences
+www.tinyurl.com/capstonepref
+-To google forms responses
+https://docs.google.com/forms/d/18t66y0X5pbvQ-zA2hhsCprV7xcdlg4MVRQrmQbm7FT0/edit
+-To responses excel spreadsheet
+https://docs.google.com/spreadsheets/d/1LT7AOWy1jw8HuAT00N2ULrLylFRoGZzYEUMHDGi6es0/edit#gid=1320405905
+-To link python code to online excel sheet:
+-https://towardsdatascience.com/accessing-google-spreadsheet-data-using-python-90a5bc214fd2  
 To create executable file for improved user's experience
 https://dev.to/eshleron/how-to-convert-py-to-exe-step-by-step-guide-3cfi
