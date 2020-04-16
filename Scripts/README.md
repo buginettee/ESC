@@ -1,10 +1,10 @@
 This folder contains the script as well as the folder recommended to be used for the smooth running of the script. This script is written in ExtendScript, the JavaScript variation designed specifically to be used for Adobe Products. In this case, the script is intended to be used on Adobe Illustrator only.
 
-
+***
 
 Purpose: Given the original empty floorplan, the user is able to draw boundaries for Capstone groups to be allocated into. By running the script, all the selected boundaries will have the capstone groups assigned accordingly, abiding by the constraints proposed by the Capstone Office. As these are to cater specifically to the SUTD Capstone Office’s requirements, the constraints are fixed.
 
-
+***
 
 Before running the script, the user has to first:
 1.	Create a brand new layer in the Illustrator file
@@ -15,7 +15,15 @@ Before running the script, the user has to first:
 3.	Select the boundaries to be allocated. Unselected boundaries will not have allocations made to them
 4.	Run the script
 
+***
 
+Design Considerations and Feature of script:
+- Allow for users to specify types of projects to be allocated within the boundary via stroke colour of the boundary
+- Industry of the capstone project is taken into consideration. Hence, each boundary will not have more than one capstone group from the same industry
+- Regex pattern matching to ensure legal inputs by the user
+- Error message windows with guided messsage regarding the error committed
+
+***
 
 Functions in the script:
 
