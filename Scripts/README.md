@@ -45,9 +45,25 @@ Functions in the script:
     * @param    myDoc   the current document being worked on
     * @return   array(condition, scale, file)      condition for script breaking, scale of floorplan, full path to the specified csv file
     */  
+    
+      /**
+    * function checkRegex(inputText)
+    *
+    * general function to check for regex of numerical inputs
+    * @param  inputText   the text that needs to be checked against the regex
+    * @return   true if pass, false if fail
+    */
+    
+      /**
+    * function industryCheck(cell)
+    *
+    * to check if the input for industry from the CSV file is legitimate
+    * @param  cell  the cell containing the value for industry from the form
+    * @return   1 if legitimate, 0 if not
+    */    
    
       /**
-    * function capstoneBoundary*myDoc, array, pathName, scale)
+    * function capstoneBoundary(myDoc, array, pathName, scale)
     *
     * given the input csv file, parses the data of the Capstone groups and stores into an array for further use
     * error messages will be displayed accordingly
@@ -85,3 +101,27 @@ Functions in the script:
     * @param    array       complete array containing all details
     * @param    scale       scale value to be passed on
     */
+    
+      /**
+    * function updateCSV(theCapstoneProjects)
+    * 
+    * creates a new csv file containing details on which capstone groups have been assigned
+    * can be used again to conduct further allocations
+    * @param    theCapstoneProjects     array containing details of all the capstone
+    * @return     file      csv file saved in fixed directory
+    */
+    
+      /**
+    * function canWriteFiles()
+    * 
+    * status - completed
+    * checks permission of scripts
+    */
+    
+      /**
+    * function clearAllUnassigned(myDoc)
+    * 
+    * for reuse of script on updated CSV, clear all unassigned groups to prevent repeats
+    * @param myDoc  the active document being worked on
+    */
+    
