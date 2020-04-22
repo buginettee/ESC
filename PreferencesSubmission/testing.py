@@ -52,12 +52,12 @@ class Test(unittest.TestCase):
 
     def test_ts_no_issue(self):
         #test total_submission_checker() with proper inputs, expect to have no issues
-        total_groups_number = 4     #change this line if the total number of groups is updated
+        total_groups_number = 24     #change this line if the total number of groups is updated
         excel_sheet = utils.access_excel('Capstone groups preferences (Responses)')
         self.assertEqual(utils.total_submission_checker(total_groups_number, excel_sheet), "End of total_submission_checker", "No issues")
     def test_d_no_issue(self):
         #test duplicate_checker() with proper inputs, expect to have no issues
-        total_groups_number = 4     #change this line if the total number of groups is updated
+        total_groups_number = 24     #change this line if the total number of groups is updated
         excel_sheet = utils.access_excel('Capstone groups preferences (Responses)')
         self.assertEqual(utils.duplicate_checker(total_groups_number, excel_sheet), "End of duplicate_checker", "No issues")
 
@@ -86,7 +86,17 @@ class Test(unittest.TestCase):
         excel_sheet = utils.access_excel('Invalid file')
         self.assertEqual(utils.duplicate_checker(4, excel_sheet), "End of duplicate_checker", "Invalid excel sheet passed in")  
 
-    
+
+    @unittest.expectedFailure
+    def test_ts_missing_param(self):
+        #test total_submission_checker() with missing parameters, expect an error
+        excel_sheet = utils.access_excel('Invalid file')
+        self.assertEqual(utils.total_submission_checker(excel_sheet), "End of total_submission_checker", "Invalid excel sheet passed in")  
+    @unittest.expectedFailure
+    def test_d_missing_param(self):
+        #test duplicate_checker() with missing parameters, expect an error
+        excel_sheet = utils.access_excel('Invalid file')
+        self.assertEqual(utils.duplicate_checker(4), "End of duplicate_checker", "Invalid excel sheet passed in")      
     
     
 if __name__ == '__main__':
