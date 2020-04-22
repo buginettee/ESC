@@ -86,7 +86,11 @@ class Test(unittest.TestCase):
         excel_sheet = utils.access_excel('Invalid file')
         self.assertEqual(utils.duplicate_checker(4, excel_sheet), "End of duplicate_checker", "Invalid excel sheet passed in")  
 
-
+    @unittest.expectedFailure
+    def test_ae_missing_param(self):
+        #test access_excel() with missing parameters, expect an error
+        correct_excel_sheet = utils.access_excel()
+        self.assertEqual(correct_excel_sheet, utils.access_excel("Invalid file"), "File to read is wrong")
     @unittest.expectedFailure
     def test_ts_missing_param(self):
         #test total_submission_checker() with missing parameters, expect an error
